@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="heart"></div>
+            <div onmousedown="sound1.play()" class="heart"></div>
         </div>
     </div>
     <script>
@@ -32,6 +32,9 @@
         amplop.addEventListener('click', () => {
             amplop.classList.toggle('flap');
         });
+
+		var sound1 = new Audio();
+		sound1.src = "kiss.wav";
     </script>
 </body>
 </html>
